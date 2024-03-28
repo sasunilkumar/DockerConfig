@@ -23,10 +23,10 @@ RUN git clone https://github.com/AVSLab/basilisk.git
 WORKDIR /basilisk
 
 RUN python3 -m pip install --upgrade pip && \
-    pip install pandas numpy pytest
+    pip install pandas numpy pytest matplotlib pillow parse==1.18.0
 
-RUN python3 -m pip install wheel conan==1.62.0
+RUN pip3 install wheel conan==1.62.0
 
 RUN python3 ./conanfile.py
 
-CMD ["python3", "./run_all_test.py"]
+#CMD ["python3", "./examples/scenarioBasicOrbit.py"]
