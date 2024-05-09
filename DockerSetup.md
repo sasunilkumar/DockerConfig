@@ -36,3 +36,11 @@
     ```Dockerfile
     CMD ["command"]
     ```
+9. **Building the Image**: In terminal, execute build and then :
+   ```docker build -t <tag_name> .
+   ```
+
+   ```docker tag <tag_name> <dockerhub_username>/<repo>:<tag_name>
+   ```
+10. **Push to DockerHub**: Push to your repository:
+    ```docker push <dockerhub_username>/<repo>:<tag_name>```
